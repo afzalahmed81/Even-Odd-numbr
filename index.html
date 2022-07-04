@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Even or Odd</title>
+    <style type="text/css">
+
+        body {
+            background-color: aquamarine;
+            margin-top: 90px;
+        }
+        .container {
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: cornflowerblue;
+            width: 700px;
+            height: 950;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Even or Odd number</h1>
+    <h3>This Application takes a number from user as an input and prints<br>
+        on the screen that, it is even or Odd number.
+    </h3>
+    <form onsubmit="calculate(); return false;">
+
+        <label for="number">Number</label>
+        <input type="number" min="1" required id="number" placeholder="Enter a positive number">
+        <br><br>
+        <button type="submit">Calculate</button>
+
+    </form>
+    <h1 id="result"></h1>
+    <script>
+        function calculate() {
+        let number = document.querySelector("#number").value;
+        
+        if (number%2 ===0) {
+            document.querySelector("#result").innerHTML = `The Entered number ${number}, is an Even number`;
+        }
+        else {
+            document.querySelector("#result").innerHTML =`The Entered number ${number}, is an Odd number`;
+        }
+    }
+
+    </script>
+    </div>
+        
+</body>
+</html>
