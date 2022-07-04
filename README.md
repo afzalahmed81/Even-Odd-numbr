@@ -1,1 +1,1 @@
-# Even-Odd-numbr
+# Even-Odd Number
